@@ -1,4 +1,7 @@
+
 var builder = WebApplication.CreateBuilder(args);
+
+
 
 builder.Services.AddCors(options =>
 {
@@ -14,6 +17,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -27,6 +31,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseCors("Frontend");
 app.MapControllers();
+app.MapHub<BucketsOfDice.Api.Hubs.DiceHub>("/hubs/dice");
 
 var summaries = new[]
 {

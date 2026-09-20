@@ -1,6 +1,13 @@
+C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.csproj.AssemblyReference.cache
+C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.AssemblyInfoInputs.cache
+C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.AssemblyInfo.cs
+C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.csproj.CoreCompileInputs.cache
+C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.sourcelink.json
 C:\src\BucketsOfDice.Api\bin\Debug\net8.0\appsettings.Development.json
 C:\src\BucketsOfDice.Api\bin\Debug\net8.0\appsettings.json
-C:\src\BucketsOfDice.Api\bin\Debug\net8.0\BucketsOfDice.Api.exe
 C:\src\BucketsOfDice.Api\bin\Debug\net8.0\BucketsOfDice.Api.deps.json
 C:\src\BucketsOfDice.Api\bin\Debug\net8.0\BucketsOfDice.Api.runtimeconfig.json
 C:\src\BucketsOfDice.Api\bin\Debug\net8.0\BucketsOfDice.Api.dll
@@ -10,13 +17,6 @@ C:\src\BucketsOfDice.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\src\BucketsOfDice.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\src\BucketsOfDice.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\src\BucketsOfDice.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.csproj.AssemblyReference.cache
-C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.AssemblyInfoInputs.cache
-C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.AssemblyInfo.cs
-C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.csproj.CoreCompileInputs.cache
-C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\src\BucketsOfDice.Api\obj\Debug\net8.0\staticwebassets.build.json
 C:\src\BucketsOfDice.Api\obj\Debug\net8.0\staticwebassets.development.json
 C:\src\BucketsOfDice.Api\obj\Debug\net8.0\staticwebassets\msbuild.BucketsOfDice.Api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -31,3 +31,4 @@ C:\src\BucketsOfDice.Api\obj\Debug\net8.0\refint\BucketsOfDice.Api.dll
 C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.pdb
 C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.genruntimeconfig.cache
 C:\src\BucketsOfDice.Api\obj\Debug\net8.0\ref\BucketsOfDice.Api.dll
+C:\src\BucketsOfDice.Api\bin\Debug\net8.0\BucketsOfDice.Api.exe

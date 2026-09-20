@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BucketsOfDice.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07f122ce7e2184f63575f66dff73446411a9c1a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+701b3ed2dba11944023d156eee9f500b252fd8f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("BucketsOfDice.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BucketsOfDice.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
