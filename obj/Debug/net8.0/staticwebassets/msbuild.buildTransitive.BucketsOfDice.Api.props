@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BucketsOfDice.Api.props" />
+</Project>
