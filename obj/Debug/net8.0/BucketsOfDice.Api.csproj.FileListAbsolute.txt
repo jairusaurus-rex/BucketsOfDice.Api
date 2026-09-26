@@ -32,3 +32,5 @@ C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.pdb
 C:\src\BucketsOfDice.Api\obj\Debug\net8.0\BucketsOfDice.Api.genruntimeconfig.cache
 C:\src\BucketsOfDice.Api\obj\Debug\net8.0\ref\BucketsOfDice.Api.dll
 C:\src\BucketsOfDice.Api\bin\Debug\net8.0\BucketsOfDice.Api.exe
+C:\src\BucketsOfDice.Api\bin\Debug\net8.0\package-lock.json
+C:\src\BucketsOfDice.Api\bin\Debug\net8.0\package.json
