@@ -1,4 +1,6 @@
 
+using BucketsOfDice.Api.Middleware;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -31,6 +33,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("Frontend");
+app.UseMiddleware<ChatRoomConnectionMiddleware>();
 app.MapControllers();
 app.MapHub<BucketsOfDice.Api.Hubs.DiceHub>("/hubs/dice");
 
