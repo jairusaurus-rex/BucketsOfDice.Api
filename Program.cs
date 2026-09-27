@@ -1,4 +1,4 @@
-
+using System.Text.Json;
 using BucketsOfDice.Api.Middleware;
 using BucketsOfDice.Api.Services;
 
@@ -21,7 +21,14 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
-builder.Services.AddSignalR();
+builder.Services.AddSignalR(options =>
+{
+    options.EnableDetailedErrors = builder.Environment.IsDevelopment();
+}).AddJsonProtocol(options =>
+{
+    options.PayloadSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+    options.PayloadSerializerOptions.PropertyNameCaseInsensitive = true;
+});
 builder.Services.AddSingleton<MessageHistory>();
 
 var app = builder.Build();
@@ -33,7 +40,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+if (!app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
 app.UseCors("Frontend");
 app.UseMiddleware<ChatRoomConnectionMiddleware>();
 app.MapControllers();
