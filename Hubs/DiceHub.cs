@@ -38,10 +38,6 @@ public class DiceHub : Hub
             || roomValue is not ChatRoom room)
             throw new HubException("This connection is not associated with a chat room.");
 
-        var userId = Context.UserIdentifier;
-        if (string.IsNullOrWhiteSpace(userId))
-            userId = Context.ConnectionId;
-
         var userName = Context.User?.Identity?.Name;
         if (string.IsNullOrWhiteSpace(userName))
             userName = Context.Items.TryGetValue("UserName", out var userNameValue)
@@ -50,7 +46,6 @@ public class DiceHub : Hub
         if (string.IsNullOrWhiteSpace(userName))
             userName = Context.ConnectionId;
 
-        message.UserId = userId;
         message.UserName = userName;
         _messageHistory.Add(room, message);
         await Clients.Group(room.ToString()).SendAsync("ReceiveMessage", message);
