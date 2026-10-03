@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\BucketsOfDice.Api.props" />
-</Project>
