@@ -21,10 +21,16 @@ public class DiceHub : Hub
     {
         var query = Context.GetHttpContext()!.Request.Query;
         var room = Enum.Parse<ChatRoom>(query["room"].ToString());
+        var userName = query["userName"].ToString();
+
         Context.Items[nameof(ChatRoom)] = room;
-        Context.Items["UserName"] = query["userName"].ToString();
+        Context.Items["UserName"] = userName;
 
         await Groups.AddToGroupAsync(Context.ConnectionId, room.ToString());
+
+        var joinMessage = CreateEnteredChatMessage(userName);
+        _messageHistory.Add(room, joinMessage);
+        await Clients.Group(room.ToString()).SendAsync("ReceiveMessage", joinMessage);
         await Clients.Caller.SendAsync("ReceiveHistory", _messageHistory.GetRecent(room));
         await base.OnConnectedAsync();
     }
@@ -92,6 +98,19 @@ public class DiceHub : Hub
         }
 
         throw new HubException("Message content is invalid.");
+    }
+
+    private static MessageDto CreateEnteredChatMessage(string userName)
+    {
+        return new MessageDto
+        {
+            Id = Guid.NewGuid().ToString(),
+            Type = "text",
+            Content = JsonSerializer.SerializeToElement(new { text = $"{userName} has entered the chat" }),
+            Timestamp = DateTimeOffset.UtcNow.ToString("O"),
+            UserId = userName,
+            UserName = userName
+        };
     }
 
     private static T? DeserializeContent<T>(JsonElement content)
