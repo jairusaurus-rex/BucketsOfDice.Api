@@ -51,12 +51,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseForwardedHeaders();
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseHttpsRedirection();
 }
 
-app.UseForwardedHeaders();
 app.UseCors("Frontend");
 app.UseMiddleware<ChatRoomConnectionMiddleware>();
 app.MapControllers();
