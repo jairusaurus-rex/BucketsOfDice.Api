@@ -106,7 +106,7 @@ public class DiceHub : Hub
         {
             Id = Guid.NewGuid().ToString(),
             Type = "text",
-            Content = JsonSerializer.SerializeToElement(new { text = $"{userName} has entered the chat" }),
+            Content = JsonSerializer.SerializeToElement(new { text = $"🚀 {userName} has entered the chat" }),
             Timestamp = DateTimeOffset.UtcNow.ToString("O"),
             UserId = userName,
             UserName = userName
